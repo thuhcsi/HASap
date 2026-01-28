@@ -23,6 +23,8 @@ To obtain clean and speaker-consistent speech segments suitable for reliable ann
 - **Speaker Diarization**: Detect speaker boundaries and ensure each segment contains speech from a single speaker.
 - **VAD-based Segmentation**: Apply voice activity detection to split audio into fine-grained speech segments.
 
+We use ASR models such as [Whisper](https://huggingface.co/openai/whisper-large-v3) and [Paraformer](https://huggingface.co/funasr/paraformer-zh) to generate transcripts with timestamps.
+
 ### Hierarchical Annotation
 
 All prompts used in this stage are defined in `prompts/prompts.py`.
